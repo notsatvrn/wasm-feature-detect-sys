@@ -27,4 +27,5 @@ version = "^0.2.55"
 features = ["strict-macro"]
 
 [dev-dependencies]
+wasm-bindgen-futures = "^0.4.5"
 wasm-bindgen-test = "^0.3.5"
