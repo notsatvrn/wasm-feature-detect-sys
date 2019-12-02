@@ -1,0 +1,30 @@
+[package]
+edition = "2018"
+name = "wasm-feature-detect-sys"
+version = "0.0.0"
+authors = ["Darin Morrison <darinmorrison@users.noreply.github.com>"]
+license = "Apache-2.0 OR MIT"
+readme = "README.md"
+repository = "https://github.com/interfaces-rs/wasm-feature-detect-sys"
+description = """
+Raw bindings to the wasm-feature-detect API for projects using wasm-bindgen.
+"""
+
+[badges]
+maintenance = { status = "experimental" }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+doctest = false
+test = false
+
+[dependencies.js-sys]
+version = "^0.3.32"
+features = []
+
+[dependencies.wasm-bindgen]
+version = "^0.2.55"
+features = ["strict-macro"]
+
+[dev-dependencies]
+wasm-bindgen-test = "^0.3.5"
