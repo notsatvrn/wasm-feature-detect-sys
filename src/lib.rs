@@ -1,4 +1,4 @@
-//! Raw bindings to the wasm-feature-detect API for projects using wasm-bindgen
+//! Raw bindings to the [wasm-feature-detect](https://wasm-feature-detect.surma.technology) API for projects using wasm-bindgen
 
 #![deny(clippy::all)]
 
