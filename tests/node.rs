@@ -6,76 +6,76 @@ use wasm_feature_detect_sys as wasm;
 #[wasm_bindgen_test]
 async fn big_int() {
     let expected: JsValue = false.into();
-    let observed: JsValue = JsFuture::from(wasm::big_int()).await.unwrap_throw();
+    let observed = JsFuture::from(wasm::big_int()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn bulk_memory() {
-    let expected = true;
-    let observed = wasm::bulk_memory();
+async fn bulk_memory() {
+    let expected: JsValue = true.into();
+    let observed = JsFuture::from(wasm::bulk_memory()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn exceptions() {
-    let expected = false;
-    let observed = wasm::exceptions();
+async fn exceptions() {
+    let expected: JsValue = false.into();
+    let observed = JsFuture::from(wasm::exceptions()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn multi_value() {
-    let expected = false;
-    let observed = wasm::multi_value();
+async fn multi_value() {
+    let expected: JsValue = false.into();
+    let observed = JsFuture::from(wasm::multi_value()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn mutable_globals() {
-    let expected = true;
-    let observed = wasm::mutable_globals();
+async fn mutable_globals() {
+    let expected: JsValue = true.into();
+    let observed = JsFuture::from(wasm::mutable_globals()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn reference_types() {
-    let expected = false;
-    let observed = wasm::reference_types();
+async fn reference_types() {
+    let expected: JsValue = false.into();
+    let observed = JsFuture::from(wasm::reference_types()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn saturated_float_to_int() {
-    let expected = true;
-    let observed = wasm::saturated_float_to_int();
+async fn saturated_float_to_int() {
+    let expected: JsValue = true.into();
+    let observed = JsFuture::from(wasm::saturated_float_to_int()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn sign_extensions() {
-    let expected = true;
-    let observed = wasm::sign_extensions();
+async fn sign_extensions() {
+    let expected: JsValue = true.into();
+    let observed = JsFuture::from(wasm::sign_extensions()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn simd() {
-    let expected = false;
-    let observed = wasm::simd();
+async fn simd() {
+    let expected: JsValue = false.into();
+    let observed = JsFuture::from(wasm::simd()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn tail_call() {
-    let expected = false;
-    let observed = wasm::tail_call();
+async fn tail_call() {
+    let expected: JsValue = false.into();
+    let observed = JsFuture::from(wasm::tail_call()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }
 
 #[wasm_bindgen_test]
-fn threads() {
-    let expected = false;
-    let observed = wasm::threads();
+async fn threads() {
+    let expected: JsValue = false.into();
+    let observed = JsFuture::from(wasm::threads()).await.unwrap_throw();
     assert_eq!(expected, observed);
 }

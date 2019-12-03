@@ -11,29 +11,29 @@ extern {
     pub fn big_int() -> Promise;
 
     #[wasm_bindgen(js_name = "bulkMemory")]
-    pub fn bulk_memory() -> bool;
+    pub fn bulk_memory() -> Promise;
 
-    pub fn exceptions() -> bool;
+    pub fn exceptions() -> Promise;
 
     #[wasm_bindgen(js_name = "multiValue")]
-    pub fn multi_value() -> bool;
+    pub fn multi_value() -> Promise;
 
     #[wasm_bindgen(js_name = "mutableGlobals")]
-    pub fn mutable_globals() -> bool;
+    pub fn mutable_globals() -> Promise;
 
     #[wasm_bindgen(js_name = "referenceTypes")]
-    pub fn reference_types() -> bool;
+    pub fn reference_types() -> Promise;
 
     #[wasm_bindgen(js_name = "saturatedFloatToInt")]
-    pub fn saturated_float_to_int() -> bool;
+    pub fn saturated_float_to_int() -> Promise;
 
     #[wasm_bindgen(js_name = "signExtensions")]
-    pub fn sign_extensions() -> bool;
+    pub fn sign_extensions() -> Promise;
 
-    pub fn simd() -> bool;
+    pub fn simd() -> Promise;
 
     #[wasm_bindgen(js_name = "tailCall")]
-    pub fn tail_call() -> bool;
+    pub fn tail_call() -> Promise;
 
-    pub fn threads() -> bool;
+    pub fn threads() -> Promise;
 }
