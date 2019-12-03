@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "wasm-feature-detect": "^1.2.1"
+    "wasm-feature-detect": "^1.2.2"
   }
 }
